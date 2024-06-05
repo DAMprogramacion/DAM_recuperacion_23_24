@@ -1,0 +1,49 @@
+Ejemplo:
+Clase persona:
+  -nombre
+  -fecha nacimiento
+  -dni
+  -constructor
+  -getters y setters
+  -toString (csv y fecha en formato xx-yy-dddd)
+  -equals y hashCode
+
+Clase alumnos:
+  -nombre de la clase (enum: SMR, ASIR, DAM o DAW)
+  -lista de objetos persona
+  -constructor (inicializamos el nombre de la clase y la lista vacía)
+  -método para añadir un alumno
+  -método para cambiar el nombre del alumno
+  -método que nos devuelva la edad media (stream)
+  -método que nos devuelva el nº de alumnos mayores de edad. (stream)
+  -método que nos devuelva un array con el alumno de mayor edad y el de menor alumno.
+  -getter de la lista de alumnos
+
+Clase Helper:
+  -método estático que pasado LocalDate devuelva un int que es la edad
+  -método estático para validar dni (ocho números y una letra)
+  -método que recibe un String(10/10/2000) ó (10-10-2000)
+     *validar el formato fecha, si no es correcto devuelvo null (Optional)
+     *formato es correcto devuelve LocalDate
+         try {
+            return LocalDate.of(year, month, date);
+         } catch (DateTimeException e) {
+            return null;
+         }
+
+Clase Main:
+   -creamos una clase alumnos
+   -añadimos cinco alumnos, uno de ellos con dni erróneo  //no se añade
+   -las fechas se pasan com String, una de ellas errónea  //no se añade
+   -cambiamos el nombre del primer alumno
+   -obtenemos el valor de la edad media.
+   -obtener el nº de alumnos mayores de edad.
+   -obtenemos el getter de la lista y la recorremos mostrando los datos del toString
+
+
+GENÉRICOS:
+
+Clase con atributo que pueda ser un genérico: A<T>
+   -atributo T t
+   -constructor, getters y setters
+   -método estático que devuelva el valor doble de ese genérico, impidiendo que que solo sean números.
