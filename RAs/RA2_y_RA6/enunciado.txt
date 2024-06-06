@@ -35,10 +35,11 @@ Clase Main:
    -creamos una clase alumnos
    -añadimos cinco alumnos, uno de ellos con dni erróneo  //no se añade
    -las fechas se pasan com String, una de ellas errónea  //no se añade
+   -mostramos en consola la lista de alumnos
    -cambiamos el nombre del primer alumno
-   -obtenemos el valor de la edad media.
-   -obtener el nº de alumnos mayores de edad.
-   -obtenemos el getter de la lista y la recorremos mostrando los datos del toString
+   -volvemoa a mostrar en consola la lista de alumnos, vemos el cambio de nombre
+   -obtenemos el valor de la edad media. Mostramos en consola.
+   -obtener el nº de alumnos mayores de edad. Mostramos en consola.
 
 
 GENÉRICOS:
