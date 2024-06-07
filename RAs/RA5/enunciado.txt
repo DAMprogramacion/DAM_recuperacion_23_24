@@ -1,0 +1,41 @@
+Clase Persona:
+  los atributos los sacamos de personas_recp.csv
+  constructor
+  getter y setters, except setter id
+  toString:
+       id: 5
+       first_name: xxxxxx
+       last_name: xxxxxx
+       email: kdkjf@jgkgdl.com
+       gender: xxxx
+  hashCode y equals:  id
+
+  Clase Helper:
+     public static List<Persona> obtenerPersonasDesdeFichero(String path) (Files: readAllLines)
+     public static long escribirFichero(String ruta, List<Persona> personas) (Files: writeString)
+     public static boolean validarEmail(String email)
+         que contenga una @ (no al principling  ni al final)
+         que aparezca . seguido de dos o tres letras.
+
+  Clase Clientes
+  atributo nombre de los clientes: socios, jugadores, etc...
+  colección de objetos persona
+  constructor (la lista se inicializa a vacía)
+  métodos:
+    para añadir una persona
+    para eliminar una persona
+    para actualizar el género una persona
+    para buscar a una persona, por email
+    nos de el nº de personas dado el género.
+    nos de una lista de objetos persona dado el dominio del correo (edu, com, ja)
+    getter de los atributos
+
+  Main:
+    leemos el fichero desde el csv y creamos una lista de personas
+    creamos un objeto de clientes
+    añadimos a clientes las personas de la lista procedente del fichero
+    actualizamos el género
+    buscamos una persona
+    nº de personas de Female
+    lista de objetos persona del domino com
+    y esa lista se escribe en un fichero (personas_com.txt)
