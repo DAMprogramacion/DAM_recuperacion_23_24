@@ -1,0 +1,36 @@
+Ejercicio de herencia:
+
+Interface: (Vivienda)
+   -aforo: int
+   -método estático, se le pasa una lista de Alojamientos y devuelve el alojamiento de mayor nº huéspedes QUE puede alojar
+
+
+Clase Alojamiento (implementa la interface anterior):
+   -id : int
+   -nombre: String
+   -direccion: String
+
+Clase Hotel:
+    -nº habitaciones
+    -nº huéspedes por habitación
+    -nº estrellas
+Clase Apartamento:
+    -nº de camas individuales
+    -nº de camas dobles
+
+Clase AgenciaViaje:
+    -nombre de la Agencia
+    -colección de alojamientos
+    -constructor
+    -getters y setters
+    -CRUD
+
+
+implementa toString, ejemplos:
+hotel,paraiso,2,3,4
+apartamento,ruidera,3,3
+
+Main:
+
+Creamos dos hoteles y dos apartamentos, creamos una lista de alojamiento, recorremos la lista y mostramos los datos del toString y del método aforo.
+Luego obtenemos el alojamiento de mayor aforo.

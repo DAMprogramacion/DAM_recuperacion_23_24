@@ -45,14 +45,5 @@ public class Helper {
         System.out.println("Validar 10-2-2000: " + obtenerFechas("10-2-2000"));
         System.out.println("Validar 50-12-2000: " + obtenerFechas("50-12-2000"));
         System.out.println("Validar 30-2-2000: " + obtenerFechas("30-2-2000"));
-
-
-
-
-
-
-
-
-
     }
 }

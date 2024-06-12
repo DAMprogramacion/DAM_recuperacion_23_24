@@ -42,6 +42,8 @@ public class Helper {
         return false;
     }
     private static Gender obtenterEnumGender(String gender) {
+        //usamos un switch, que viene Male devolvemos Gender.MALE
+        //que viene Famele, devolvemos Gender.FAMALE
         switch (gender) {
             case "Male" -> {
                 return Gender.MALE;
@@ -71,8 +73,7 @@ public class Helper {
 
 
         }
-        //usamos un switch, que viene Male devolvemos Gender.MALE
-        //que viene Famele, devolvemos Gender.FAMALE
+
         return null;
     }
 
