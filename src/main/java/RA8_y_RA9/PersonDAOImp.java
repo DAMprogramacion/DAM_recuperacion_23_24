@@ -57,7 +57,16 @@ public class PersonDAOImp implements PersonDAO{
 
     @Override
     public boolean deletePersonByDNI(String dni) {
-        return false;
+        int rows = 0;
+        ////delete from person WHERE dni = "38356379d";
+        String sql = "delete from person WHERE dni = ?;";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setString(1, dni);
+            rows = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return rows != 0;
     }
 
     @Override
@@ -79,7 +88,17 @@ public class PersonDAOImp implements PersonDAO{
 
     @Override
     public boolean updateNameByDNI(String dni, String newName) {
-        return false;
+        int rows = 0;
+        // update person set name="juanita" where dni = "38356379d";
+        String sql = "update person set name= ? where dni = ?;";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setString(1, newName);
+            preparedStatement.setString(2, dni);
+            rows = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return rows != 0;
     }
     private LocalDate generateDate(String sDate) {
         //sDate viene "11/18/2023'"

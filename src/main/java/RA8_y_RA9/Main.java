@@ -30,10 +30,19 @@ public class Main {
         System.out.println("===toda la lista===");
         List<Person> people = dao.getPeople();
         people.forEach(System.out::println);
-        System.out.println("===insertar persona===");
+      /*  System.out.println("===insertar persona===");
         person = new Person("juanito", "12345678a", LocalDate.of(1999,9,9), 5);
         boolean success = dao.insertPerson(person);
+        System.out.println("Success: " + success);*/
+        System.out.println("===borrando===");
+        boolean success = dao.deletePersonByDNI("12345678a");
         System.out.println("Success: " + success);
+        System.out.println("===actualizando=====");
+        //38356379d
+        success = dao.updateNameByDNI("38356379d", "pepita");
+        System.out.println("Success: " + success);
+
+
 
 
 

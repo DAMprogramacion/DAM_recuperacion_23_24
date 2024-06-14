@@ -8,7 +8,7 @@ public interface PersonDAO {
     Person getPersonByDNI(String dni);
     //select *  from person;
     List<Person> getPeople();
-    //delete from person WHERE dni = "38356379d";
+
     boolean deletePersonByDNI(String dni);
     boolean insertPerson(Person person);
     // update person set name="juanita" where dni = "38356379d";
