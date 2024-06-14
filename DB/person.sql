@@ -3,7 +3,8 @@ create table person (
 	name TEXT,
 	dni TEXT,
 	birthday DATE,
-	nChildren TEXT
+	nChildren TEXT,
+	primary key (dni)
 );
 insert into person (name, dni, birthday, nChildren) values ('Jefferson Wingeatt', '68049720d', '12/13/2023', '3');
 insert into person (name, dni, birthday, nChildren) values ('Maressa Parzis', '51238663m', '11/25/2023', '5');
