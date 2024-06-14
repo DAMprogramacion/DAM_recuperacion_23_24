@@ -1,0 +1,8 @@
+Usando la tabla persona, con atributos:
+     -nombre         : String     - TEXT
+     -dni            : String     - TEXT
+     -fechaNacimiento: LocalDate  - DATE
+     -nº hijos       : int        - TEXT
+
+Crear la típica aplicación para acceder a la BD y realizar las
+operaciones CRUD
