@@ -1,4 +1,4 @@
-package RA5;
+package RA5.ejercicio1;
 
 import java.util.Objects;
 

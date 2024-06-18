@@ -1,4 +1,4 @@
-package RA5;
+package RA5.ejercicio1;
 
 public enum Gender {
     MALE, FEMALE, NON_BINARY, POLYGENDER, BIGENDER, AGENDER, GENDERFLUID, GENDERQUEER
