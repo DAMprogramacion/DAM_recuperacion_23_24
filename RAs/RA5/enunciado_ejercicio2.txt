@@ -2,5 +2,5 @@
 
 1º Crear la clase Location
 2º Crear Helper con los dos métodos:
-   - public List<Location> getLocation(String path) (lectura fichero)
-   - public long write10Location(String path, List<Location>) escribir fichero
+   - public static List<Location> getLocation(String path) (lectura fichero)
+   - public static long write10Location(String path, List<Location>) escribir fichero
