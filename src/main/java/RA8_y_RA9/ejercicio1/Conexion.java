@@ -1,4 +1,4 @@
-package RA8_y_RA9;
+package RA8_y_RA9.ejercicio1;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
